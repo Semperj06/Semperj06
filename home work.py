@@ -26,3 +26,12 @@ s = p * (p - a) * (p - b) * (p - c)
 import math
 s = math.sqrt(s)
 print("area of a triangle =", s)'''
+#Exercise 7.
+#x = list(map(int, input('Enter number')))
+#print(sum(x))
+#Exercise 8.
+#x = input("Enter number")
+#print(len(x))
+#Exercise 9.
+#x = str(input('Enter number'))
+#print(list(reversed(x)))
