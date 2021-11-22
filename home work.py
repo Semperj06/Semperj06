@@ -1,37 +1,43 @@
+'''a = int(input("1 \n"))
+b = int(input("2 \n"))
+c = int(input("3 \n"))
+d = int(input("4 \n"))
+if a > b and a > c and a > d:
+    print(a)
+elif b > c and b > d:
+    print(b)
+elif c > d:
+    print(c)
+else:
+    print(d)'''
+"""FLOORS = 9
+ENTRANCE = 4
+NUM_FLATS = 4
+apartment_number = int(input("enter the house number \n"))-1
+entrance_number = (apartment_number // (FLOORS * ENTRANCE))+1
+FLOOR_NUMBER = (apartment_number // NUM_FLATS - (entrance_number - 1) * FLOORS) + 1
+if apartment_number <= 143:
+    print("entrance number is", entrance_number, "floor number is ", FLOOR_NUMBER, sep="\n")
+else:
+    print("there is no such apartment in this house")"""
 # Exercise 1.
-# x = str(123)
-# x = int(x[0]+x[1]+x[2])
+"""number = list(input("Enter number "))
+if int(number[0])+int(number[1]) == int(number[-2]) + int(number[-1]):
+    print("happy ticket")
+else:
+    print("failure")"""
 # Exercise 2.
-# x = int(123)
-# x = float((x * 100) / 100)
-'''#Exercise 3.
-#x = float(12.345)
-#x = int(x*1000)
-#x = round(x)
-#Exercise 4.
-#numb = str(input("Enter number card"))
-#print("last four number", numb[12], numb[13], numb[14], numb[15])
-#Exercise 5.
-x = str(input("Enter number"))
-a = int(x[0])
-b = int(x[1])
-c = int(x[2])
-print("sum", a+b+c)
-#Exercise 6.
-a = int(input("enter variable a ="))
-b = int(input("enter variable b ="))
-c = int(input("enter variable c ="))
-p = (a + b + c) / 2
-s = p * (p - a) * (p - b) * (p - c)
+"""number = list(input("Enter number "))
+number_reverse = number[::-1]
+if number == number_reverse:
+    print("True")
+else:
+    print("False")"""
+# Exercise 3.
+"""RADIUS = 4
 import math
-s = math.sqrt(s)
-print("area of a triangle =", s)'''
-#Exercise 7.
-#x = list(map(int, input('Enter number')))
-#print(sum(x))
-#Exercise 8.
-#x = input("Enter number")
-#print(len(x))
-#Exercise 9.
-#x = str(input('Enter number'))
-#print(list(reversed(x)))
+x_point, y_point = float(input("x = ")), float(input("y = "))
+if math.sqrt(x_point ** 2 + y_point ** 2) <= RADIUS:
+    print("The point belongs to the circle")
+else:
+    print("The point does NOT belong to the circle")"""
