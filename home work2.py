@@ -14,10 +14,14 @@ while 4 < n < 16:
 print(sum)'''
 # Exercise 3.
 '''FIRST = 5
-second = 1
-for i in range (10):
-    print(second, "x", FIRST, "=", second * FIRST, end='  ')
-    second += 1'''
+for i in range (11):
+    print(i, "x", FIRST, "=", i * FIRST, end='  ')'''
+# Exercise 4.
+'''ONE = int(input("enter"))
+TWO = int(input("enter"))
+while ONE > 0 :
+    print("*"*TWO)
+    ONE -=1'''
 # Exercise 4.
 '''ONE = int(input("enter"))
 TWO = int(input("enter"))
@@ -49,10 +53,8 @@ salary = []
 for i in range (12):
     salary.append(random.randrange(7500, 15000))
 print(salary)
-for m in salary:
-    x = m + x
-salary = x // len(salary)
-print("average monthly salary =", salary, "grn")'''
+avg = sum(salary) // len(salary)
+print("average monthly salary =", avg, "grn")'''
 # Exercise 8.
 '''matrix = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]]
 sum = 0
