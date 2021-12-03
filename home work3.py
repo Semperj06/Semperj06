@@ -36,10 +36,10 @@ for ltr in text:
         length_ltr = ltr
 print("The string has the most characters =", length_ltr)'''
 # Exercise 6.
-'''text = "catcatcatcat ".lower()
-word = ""
-for letter in text:
-    if not letter in word:
-        word += letter
-print(word)'''
+'''text = "daddaddaddaddaddaddaddaddaddaddaddaddaddaddaddad".lower()
+word = list(map(str, text))
+a, b, c, d = word[0], word[1], word[2], word[3]
+a, b, c, d = word.count(a), word.count(b), word.count(c), word.count(d)
+ltr = min(a, b, c, d)
+print(text[0:len(text)//ltr])'''
 
