@@ -11,7 +11,7 @@ bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(commands=["start"])
 def message_start(message):
-    bot.send_message(message.chat.id, "Hello, user!")
+    bot.send_message(message.chat.id, "Привет фуфел")
 
 
 @app.route("/" + TOKEN, methods=["POST"])
