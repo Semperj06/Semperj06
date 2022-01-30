@@ -1,35 +1,31 @@
-#Exercise 1.print("Hello world")
 
-'''Exercise 2.
-print(end='\n%    '"My name David")
-print(end='\n-      '"I am from Ukraine")
-print(end='\n=      '"life in Ukraine is hard")'''
-'''Exercise 3.
-length=int(input("enter length rectangle"))
-width=int(input("enter width rectangle"))
-area=length*width
-print("The area of the rectangle is",area)'''
-
-"""Exercise 4.
-FirstNo = int(input("Enter first number"))
-SecondNo = int(input("Enter the second number"))
-Sum = (FirstNo + SecondNo)
-Product = FirstNo * SecondNo
-Difference = FirstNo - SecondNo
-Quotient = FirstNo / SecondNo
-Remainder = FirstNo % SecondNo
-
-print(Sum)
-print(Product)
-print(Quotient)
-print(Remainder)"""
+from flask import Flask, request
+import telebot
+import os
 
 
-Radius = float(input("Enter the radius of the circle"))
-P = float(3.14159)
-Diameter = float(Radius*2)
-Circumference = float(2*P*Diameter)
-Area = float(P*Radius**2)
-print("Diameter are", '\n', Diameter)
-print("Circumference are", '\n', Circumference)
-print("Area are", '\n', Area)
+app = Flask(__name__)
+TOKEN = os.environ.get("TOKEN")
+bot = telebot.TeleBot(TOKEN)
+
+
+@bot.message_handler(commands=["start"])
+def message_start(message):
+    bot.send_message(message.chat.id, "Hello, user!")
+
+
+@app.route("/" + TOKEN, methods=["POST"])
+def get_message():
+    bot.process_new_updates([telebot.types.Update.de_json(request.stream.read().decode("utf-8"))])
+    return "Python Telegram Bot 31-01-2022", 200
+
+
+@app.route("/")
+def main():
+    bot.remove_webhook()
+    bot.set_webhook(url="https://semperj06.herokuapp.com/" + TOKEN)
+    return "Python Telegram Bot", 200
+
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
