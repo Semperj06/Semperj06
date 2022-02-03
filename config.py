@@ -1,0 +1,10 @@
+Token = "5211046264:AAG0V42RkrQsFDVW-ZJCdPRorAM8u7c8eac"
+url_privat_bank = "https://api.privatbank.ua/p24api/exchange_rates?json&date=01.12.2014"
+#price = coin_g.get_price(ids=['bitcoin', 'litecoin', 'ethereum', 'ripple'], vs_currencies='usd, uah')
+#    text = f"BTC = {price['bitcoin']['usd']} uah({price['bitcoin']['uah']})"
+list_of_cripto = ["bitcoin", "Cosmos", "ripple", "sushi", "Shiba-Inu", "Internet-Computer", "Mobox", "cake", "cardano", "Smooth-Love-Potion", "My-Neighbor-Alice", "The-Sandbox", "Curve-DAO-Token", "Hedera-Hashgraph", "VeChain", "stellar", "Binance Coin", "doge coin", "dodo", "iota"]
+DOLLAR_UAH = "https://www.google.com/search?q=%D0%B4%D0%BE%D0%BB%D0%BB%D0%B0%D1%80+%D0%BA+%D0%B3%D1%80%D0%BD&sxsrf=APq-WBvGkxzdwoy3Bsa7EE58powU4coxBg%3A1643880238171&ei=Lp_7YfzpCeyF9u8Ppt6tyA8&ved=0ahUKEwj8uJiNm-P1AhXsgv0HHSZvC_kQ4dUDCA4&uact=5&oq=%D0%B4%D0%BE%D0%BB%D0%BB%D0%B0%D1%80+%D0%BA+%D0%B3%D1%80%D0%BD&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIICAAQFhAKEB46BwgAEEcQsAM6BAgjECc6CAgAEIAEELEDOhEILhCABBCxAxCDARDHARCjAjoLCC4QgAQQxwEQowI6CAguEIAEELEDOgQILhBDOg4ILhCABBCxAxDHARCjAjoHCAAQsQMQQzoFCC4QgAQ6BAgAEEM6BQgAELEDOgsIABCABBCxAxDJAzoICAAQsQMQgwE6CQgjECcQRhCCAjoLCAAQgAQQsQMQgwFKBAhBGABKBAhGGABQ1RFY_SNgniVoAXABeACAAW-IAZEIkgEEMTEuMZgBAKABAcgBCMABAQ&sclient=gws-wiz"
+
+ne_bot = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"}
+EURO_UAH = "https://www.google.com/search?q=%D0%B5%D0%B2%D1%80%D0%BE+%D0%BA+%D0%B3%D1%80%D0%BD&sxsrf=APq-WBsUetmvwvhbcrEeLQIPIC_ssMHvQQ%3A1643885450892&ei=irP7YdLiNaOD9u8PiMKt4As&ved=0ahUKEwjSz-fCruP1AhWjgf0HHQhhC7wQ4dUDCA4&uact=5&oq=%D0%B5%D0%B2%D1%80%D0%BE+%D0%BA+%D0%B3%D1%80%D0%BD&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeOgQIIxAnOgQIABBDOg4ILhCABBCxAxDHARCjAjoHCAAQsQMQQzoKCAAQsQMQgwEQQzoICAAQgAQQsQM6DAgAELEDEEMQRhCCAjoICAAQgAQQyQM6CggAEIAEEIcCEBRKBAhBGABKBAhGGABQAFiGDGDGDWgAcAJ4AIABfIgByAeSAQM2LjSYAQCgAQHAAQE&sclient=gws-wiz"
+
